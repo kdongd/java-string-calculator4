@@ -2,6 +2,7 @@ package stringCalculator;
 
 public class StringCalculatorMain {
     public static void main(String[] args) {
-        StringCalculator.calculate();
+        StringCalculator stringCalculator = new StringCalculator();
+        stringCalculator.run();
     }
 }
