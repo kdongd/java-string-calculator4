@@ -2,7 +2,7 @@ package stringCalculator;
 
 public class OutputProcessor {
 
-    public void output(int result) {
-        System.out.println("결과: " + result);
+    public void output(int number) {
+        System.out.println("결과: " + number);
     }
 }

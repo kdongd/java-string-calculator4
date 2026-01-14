@@ -7,7 +7,6 @@ public class StringCalculator {
     public int calculate(String[] values) {
         try {
 
-        int result;
         int number = Integer.parseInt(values[0]);
 
             for (int i = 1; i < values.length; i += 2) {
@@ -16,8 +15,8 @@ public class StringCalculator {
 
                 number = operator.operation(number, nextNumber);
             }
-            result = number;
-            return result;
+
+            return number;
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("숫자가 아닌 값이 포함되어 있습니다." , e);
         } catch (ArrayIndexOutOfBoundsException e) {
