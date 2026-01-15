@@ -7,10 +7,10 @@ public class StringCalculatorMain {
         OutputProcessor outputProcessor = new OutputProcessor();
         FormulaSplitter formulaSplitter = new FormulaSplitter();
 
-        String value = inputProcessor.input();
-        String[] values = formulaSplitter.split(value);
+        String formula = inputProcessor.input();
+        String[] tokens = formulaSplitter.split(formula);
 
-        int result = stringCalculator.calculate(values);
+        int result = stringCalculator.calculate(tokens);
         outputProcessor.output(result);
     }
 }
